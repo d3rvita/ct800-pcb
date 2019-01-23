@@ -1,9 +1,9 @@
 '''
-script for generating transparent acrylic panels for the CT800 chess computer.
-created panels contains only monting and button holes which are extracted from PCB layout (KiCAD).
-panel files can be manipulated and converted into desired file format by PCBnew.
+Script for generating transparent acrylic panels for the CT800 chess computer.
+Created panels contain only mounting and button holes which are extracted from PCB layout (KiCAD).
+Panel files can be manipulated and converted into desired file format by PCBnew.
 
-the classic panel is intended for the following housing:
+The classic panel is intended for the following housing:
 Axxatronic BIM1006-BLK/PG or BIM1006-GY/PG
 dimensions: 130 x 215 x 72 mm, front panel: 125,5 x 209,5 mm (mounting holes: 116 x 200 mm)
 https://www.voelkner.de/products/774532/Axxatronic-Pult-Gehaeuse-130-x-215-x-72-ABS-Schwarz-BIM1006-BLK-PG-1St..html
