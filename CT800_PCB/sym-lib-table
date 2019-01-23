@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Olimex_STM32H405)(type Legacy)(uri ${KIPRJMOD}/lib/Olimex_STM32H405.lib)(options "")(descr ""))
+  (lib (name ESP-01)(type Legacy)(uri ${KIPRJMOD}/lib/ESP-01.lib)(options "")(descr ""))
+)
