@@ -1,6 +1,6 @@
 # CT800-PCB
 
-In order to become familiar with KiCAD and making something useful at the same time I started this project. The goal was to develop a PCB for the CT800 to ease the build-up. The CT800 is a dedicated chess computer made by Rasmus Althoff. It is very well documented, take a look at its homepage www.ct800.net for detailed info. 
+In order to become familiar with KiCAD and making something useful at the same time I started this project. The goal was to develop a PCB for the CT800 to ease the build-up. The CT800 is a dedicated chess computer made by Rasmus Althoff. It is very well documented, take a look at its homepage [www.ct800.net](https://www.ct800.net "CT800 Homepage") for detailed info. 
 
 The developed PCB consists entirely of THT components except one SMD transistor, due to better availability of 3.3V logic level devices. Soldering SMD parts isn’t easy especially packages like LQFP64 with 0.5mm pitch, therefore the Olimex board was kept in this design. The CT800 was extended by some interfaces (RS232, Bluetooth, WLAN) for future use. The power supply was amended a bit too.
 
@@ -59,7 +59,7 @@ Many other switch configurations are possible. Whatever you choose, ensure power
 ## PCB Assembly
 
 Read the entire text before starting assembly. Decide what power source you use to feed the CT800 and if you need a power switch or not. It is recommended to place the smallest components first: the SMD transistor, resistors, capacitors and then the remaining parts but the display and Olimex board. Consider the polarity of diodes, LEDs (cathode to rectangular pad = ground) and polarized capacitors. Apply heat paste to the voltage regulator(s) and screw them to the PCB before soldering. 
-If battery monitoring is used, activate the JP2 jumper on top side. Before placing display and Olimex board check the 5V and 3.3V voltages (there are test points on the PCB). __Don’t proceed until these voltages are alright.__ Before soldering the display, screw it to the PCB and adjust the height by putting washers in between. On some displays the polarity of the back light has  to be changed. On the back side of the display are jumpers for this purpose, regard the data sheet. __Don’t solder the Olimex board to the PCB, use female header instead.__ For UART communication between µC and ESP-01 the resistor R27 on the Olimex board has to be removed.
+If battery monitoring is used, activate the JP2 jumper on top side. Before placing display and Olimex board check the 5V and 3.3V voltages (there are test points on the PCB). __Don’t proceed until these voltages are alright.__ Before soldering the display, screw it to the PCB and adjust the height by putting washers in between. On some displays the polarity of the back light has  to be changed. On the back side of the display are jumpers for this purpose, regard the data sheet. __Don’t solder the Olimex board to the PCB, use female header instead.__ For UART communication between µC and ESP-01 the resistor R27 on the Olimex board has to be removed. In order to prevent the gold-cap to be drained in standby, the VBAT jumper on the STM32H405 board has to be disrupted.
 
 ## Schematic
 
